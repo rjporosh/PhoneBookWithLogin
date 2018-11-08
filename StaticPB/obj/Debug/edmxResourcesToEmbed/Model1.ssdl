@@ -4,7 +4,6 @@
     <Key>
       <PropertyRef Name="Id" />
       <PropertyRef Name="UserName" />
-      <PropertyRef Name="PhoneNumber" />
       <PropertyRef Name="Type" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
@@ -36,21 +35,9 @@
     <Property Name="Password" Type="varchar" MaxLength="8" Nullable="false" />
     <Property Name="Type" Type="varchar" MaxLength="5" Nullable="false" />
   </EntityType>
-  <EntityType Name="tblUser">
-    <Key>
-      <PropertyRef Name="Id" />
-      <PropertyRef Name="User" />
-      <PropertyRef Name="PhoneNumber" />
-    </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="User" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="PhoneNumber" Type="varchar" MaxLength="15" Nullable="false" />
-  </EntityType>
   <EntityContainer Name="MultipleLoginModelStoreContainer">
     <EntitySet Name="tblMain" EntityType="Self.tblMain" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblMultipleLogin" EntityType="Self.tblMultipleLogin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblRegister" EntityType="Self.tblRegister" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

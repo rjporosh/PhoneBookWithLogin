@@ -83,9 +83,9 @@ namespace StaticPB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap magnifyingglass_512 {
+        internal static System.Drawing.Bitmap lockFinal {
             get {
-                object obj = ResourceManager.GetObject("magnifyingglass-512", resourceCulture);
+                object obj = ResourceManager.GetObject("lockFinal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,39 +93,9 @@ namespace StaticPB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Password {
+        internal static System.Drawing.Bitmap pbf1 {
             get {
-                object obj = ResourceManager.GetObject("Password", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pb {
-            get {
-                object obj = ResourceManager.GetObject("pb", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pbf {
-            get {
-                object obj = ResourceManager.GetObject("pbf", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap reg {
-            get {
-                object obj = ResourceManager.GetObject("reg", resourceCulture);
+                object obj = ResourceManager.GetObject("pbf1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +113,9 @@ namespace StaticPB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap usr_512x512 {
+        internal static System.Drawing.Bitmap unlocking {
             get {
-                object obj = ResourceManager.GetObject("usr 512x512", resourceCulture);
+                object obj = ResourceManager.GetObject("unlocking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

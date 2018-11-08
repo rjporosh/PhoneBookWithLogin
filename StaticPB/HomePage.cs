@@ -17,10 +17,13 @@ namespace StaticPB
         private Point startPoint = new Point(0, 0); // also for the moving
         int count =1;
         int clickCount = 0;
+        string connection =
+            @"data source=mylaptop\sqlexpress;initial catalog=MultipleLogin;integrated security=True;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
 
-        
-      //  Register r=new Register();
-        
+
+
+//  Register r=new Register();
+
         public HomePage()
         {
             InitializeComponent();
@@ -99,9 +102,7 @@ namespace StaticPB
                        isValid(txtUsername, lblUserName);
             if (isOk)
             {
-                string connection =
-                    @"data source=mylaptop\sqlexpress;initial catalog=MultipleLogin;integrated security=True;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
-                SqlConnection con = new SqlConnection(connection);
+               SqlConnection con = new SqlConnection(connection);
                 SqlDataAdapter sda = new SqlDataAdapter("Select Type from tblMultipleLogin Where UserName= '" + txtUsername.Text + "'and Password ='" + txtPassword.Text + " ' and Type ='"+txtType.Text+" ' ", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -122,19 +123,24 @@ namespace StaticPB
                         Properties.Settings.Default.Type = "";
                         Properties.Settings.Default.Save();
                     }
-                    this.Hide();
+                  
+                    pictureBox1.Image = StaticPB.Properties.Resources.unlocking;
                      
                     MessageBox.Show("Login Success", "Congrates");
                     MessageBox.Show("WelCome dear " + txtUsername.Text);
                     Main m = new Main(txtUsername.Text,txtType.Text);
+                    this.Hide();
                     m.ShowDialog();
-                    
+                    con.Close();
+
                 }
                 else
                 {
+                    pictureBox1.Image = StaticPB.Properties.Resources.lockFinal;
+
                     MessageBox.Show("Incorrect User Name Or Password");
                 }
-                con.Close();
+              
             }
             else
             {

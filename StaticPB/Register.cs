@@ -17,6 +17,9 @@ namespace StaticPB
         private bool drag = false; // determine if we should be moving the form
         private Point startPoint = new Point(0, 0); // also for the moving
         int count = 1;
+        String Connection =
+            @"data source=mylaptop\sqlexpress;initial catalog=MultipleLogin;integrated security=True;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
+
         private int clickCount = 0;
         int Available = 1;
         private int PasswordMatched = 0;
@@ -43,6 +46,7 @@ namespace StaticPB
         private void picShow_Click(object sender, EventArgs e)
         {
             picShow.Image = StaticPB.Properties.Resources.hide;
+            
 
             if (count % 2 == 0)
             {
@@ -103,8 +107,6 @@ namespace StaticPB
 
         void CheckUsernameIsAvailable()
         {
-            String Connection =
-                @"data source=mylaptop\sqlexpress;initial catalog=MultipleLogin;integrated security=True;multisubnetfailover=False;MultipleActiveResultSets=True;App=EntityFramework";
             SqlConnection con = new SqlConnection(Connection);
             SqlDataAdapter sda =
                 new SqlDataAdapter(
@@ -183,12 +185,7 @@ namespace StaticPB
             {
                 validity = false;
                 label.ForeColor = System.Drawing.Color.Red;
-                
-                
-
-
-
-            }
+           }
             else
             {
                 validity = true;
@@ -224,9 +221,9 @@ namespace StaticPB
 
                 using (DBEntities db = new DBEntities())
                 {
-                    if (modelRegister.Id == 0 & modelLogin.Id == 0 && Available ==0 && PasswordMatched == 1 ) //Insert
-                    //    if (modelRegister.Id == 0 & modelLogin.Id == 0 & Available < 1 & PasswordMatched == 1)
-                       {
+                    if (modelRegister.Id == 0 & modelLogin.Id == 0 && Available == 0 && PasswordMatched == 1) //Insert
+                                                                                                              //    if (modelRegister.Id == 0 & modelLogin.Id == 0 & Available < 1 & PasswordMatched == 1)
+                    {
 
                         db.tblRegisters.Add(modelRegister);
                         db.tblMultipleLogins.Add(modelLogin);
@@ -234,22 +231,22 @@ namespace StaticPB
                         MessageBox.Show("Registered Successfully", "Registered");
 
 
-                       }
+                    }
                     else //Update
                     {
 
-                    //    db.Entry(modelRegister).State = EntityState.Modified;
-                    //    db.Entry(modelLogin).State = EntityState.Modified;
+                        //    db.Entry(modelRegister).State = EntityState.Modified;
+                        //    db.Entry(modelLogin).State = EntityState.Modified;
 
-                      MessageBox.Show("Registration failed", "Error");
+                        MessageBox.Show("Registration failed", "Error");
                     }
-                   
+
 
                 }
 
-                //  Clear();
-                    // PopulateGridView();
-                }
+                //Clear();
+                //PopulateGridView();
+            }
 
             clickCount++;
         }

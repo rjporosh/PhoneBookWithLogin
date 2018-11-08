@@ -14,3 +14,7 @@ c:\users\rj porosh\documents\visual studio 2015\Projects\StaticPB\StaticPB\obj\D
 c:\users\rj porosh\documents\visual studio 2015\Projects\StaticPB\StaticPB\obj\Debug\StaticPB.Main.resources
 c:\users\rj porosh\documents\visual studio 2015\Projects\StaticPB\StaticPB\obj\Debug\StaticPB.Register.resources
 C:\Users\Rj Porosh\documents\visual studio 2015\Projects\StaticPB\StaticPB\obj\Debug\StaticPB.Details.resources
+C:\Users\Rj Porosh\Documents\Visual Studio 2015\Projects\StaticPB\StaticPB\bin\Debug\StaticPB.exe.manifest
+C:\Users\Rj Porosh\Documents\Visual Studio 2015\Projects\StaticPB\StaticPB\bin\Debug\StaticPB.application
+C:\Users\Rj Porosh\Documents\Visual Studio 2015\Projects\StaticPB\StaticPB\obj\Debug\StaticPB.exe.manifest
+C:\Users\Rj Porosh\Documents\Visual Studio 2015\Projects\StaticPB\StaticPB\obj\Debug\StaticPB.application

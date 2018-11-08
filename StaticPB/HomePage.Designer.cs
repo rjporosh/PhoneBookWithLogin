@@ -38,22 +38,22 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.picShow = new System.Windows.Forms.PictureBox();
             this.txtType = new System.Windows.Forms.ComboBox();
             this.paneUserName = new System.Windows.Forms.Panel();
-            this.picAvailable = new System.Windows.Forms.PictureBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picShow = new System.Windows.Forms.PictureBox();
+            this.picAvailable = new System.Windows.Forms.PictureBox();
             this.Title.SuspendLayout();
             this.LoginLayout.SuspendLayout();
             this.panelPassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
             this.paneUserName.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvailable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvailable)).BeginInit();
             this.SuspendLayout();
             // 
             // Title
@@ -193,18 +193,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(198, 16);
             this.txtPassword.TabIndex = 0;
-            // 
-            // picShow
-            // 
-            this.picShow.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.picShow.Image = global::StaticPB.Properties.Resources.show;
-            this.picShow.Location = new System.Drawing.Point(201, 18);
-            this.picShow.Name = "picShow";
-            this.picShow.Size = new System.Drawing.Size(32, 15);
-            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picShow.TabIndex = 6;
-            this.picShow.TabStop = false;
-            this.picShow.Click += new System.EventHandler(this.picShow_Click);
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtType
             // 
@@ -234,18 +223,6 @@
             this.paneUserName.Size = new System.Drawing.Size(264, 51);
             this.paneUserName.TabIndex = 3;
             // 
-            // picAvailable
-            // 
-            this.picAvailable.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.picAvailable.Image = global::StaticPB.Properties.Resources.show;
-            this.picAvailable.Location = new System.Drawing.Point(204, 13);
-            this.picAvailable.Name = "picAvailable";
-            this.picAvailable.Size = new System.Drawing.Size(32, 15);
-            this.picAvailable.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvailable.TabIndex = 8;
-            this.picAvailable.TabStop = false;
-            this.picAvailable.Visible = false;
-            // 
             // txtUsername
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -258,46 +235,74 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(198, 16);
             this.txtUsername.TabIndex = 0;
+            this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.Color.Lime;
             this.btnLogin.Location = new System.Drawing.Point(531, 426);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(93, 55);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
+            this.btnRegister.BackColor = System.Drawing.Color.Gold;
             this.btnRegister.Location = new System.Drawing.Point(642, 426);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(93, 55);
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.Color.OrangeRed;
             this.btnClear.Location = new System.Drawing.Point(414, 426);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(93, 55);
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::StaticPB.Properties.Resources.pbf;
+            this.pictureBox1.Image = global::StaticPB.Properties.Resources.pbf1;
             this.pictureBox1.Location = new System.Drawing.Point(44, 208);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(170, 201);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // picShow
+            // 
+            this.picShow.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.picShow.Image = global::StaticPB.Properties.Resources.show;
+            this.picShow.Location = new System.Drawing.Point(201, 18);
+            this.picShow.Name = "picShow";
+            this.picShow.Size = new System.Drawing.Size(32, 15);
+            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picShow.TabIndex = 6;
+            this.picShow.TabStop = false;
+            this.picShow.Click += new System.EventHandler(this.picShow_Click);
+            // 
+            // picAvailable
+            // 
+            this.picAvailable.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.picAvailable.Image = global::StaticPB.Properties.Resources.show;
+            this.picAvailable.Location = new System.Drawing.Point(204, 13);
+            this.picAvailable.Name = "picAvailable";
+            this.picAvailable.Size = new System.Drawing.Size(32, 15);
+            this.picAvailable.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvailable.TabIndex = 8;
+            this.picAvailable.TabStop = false;
+            this.picAvailable.Visible = false;
             // 
             // HomePage
             // 
@@ -327,11 +332,11 @@
             this.LoginLayout.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             this.paneUserName.ResumeLayout(false);
             this.paneUserName.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvailable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvailable)).EndInit();
             this.ResumeLayout(false);
 
         }

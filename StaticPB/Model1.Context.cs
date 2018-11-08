@@ -25,9 +25,8 @@ namespace StaticPB
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<tblMain> tblMains { get; set; }
         public virtual DbSet<tblMultipleLogin> tblMultipleLogins { get; set; }
         public virtual DbSet<tblRegister> tblRegisters { get; set; }
-        public virtual DbSet<tblUser> tblUsers { get; set; }
-        public virtual DbSet<tblMain> tblMains { get; set; }
     }
 }
